@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+
+<div id="app">
+  <h2>{{message}}</h2>
+  <h2>{{url}}</h2>
+<!--  v-html的作用就是为了防止返回的url带标签的格式 自动解析成url-->
+  <h2 v-html="url"></h2>
+</div>
+
+
+
+
+
+<script src="../js/vue.js"></script>
+<script>
+  let vm=new Vue({
+    el: '#app',
+    data: {
+      message: '测试',
+      url: '<a href="http://www.baidu.com">百度一下</a>'
+    }
+  })
+</script>
+
+</body>
+</html>

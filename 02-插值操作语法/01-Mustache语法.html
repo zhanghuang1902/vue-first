@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <h2>{{message}}</h2>
+  <h2>{{message}},你好啊</h2>
+  <h3>{{message + lastName + firstName}}</h3>
+  <h5>{{firstName}} {{lastName}}</h5>
+  <h3>{{count + sum}}</h3>
+  <h3>{{count * 2}}</h3>
+</div>
+
+
+
+
+
+<script src="../js/vue.js"></script>
+<script>
+  let vm=new Vue({
+    el: '#app',
+    data: {
+      message: '张煌',
+      firstName: '煌',
+      lastName: '辉',
+      count: 100,
+      sum: 300
+    }
+  })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <h2>{{message}}</h2>
+<!--  v-once的指令是只渲染一次，不随着message的变化而变化，且其指令后面不加任何参数-->
+  <h2 v-once>{{message}}</h2>
+</div>
+
+
+
+
+
+<script src="../js/vue.js"></script>
+<script>
+  let vm=new Vue({
+    el: '#app',
+    data: {
+      message: '测试'
+    }
+  })
+</script>
+
+</body>
+</html>

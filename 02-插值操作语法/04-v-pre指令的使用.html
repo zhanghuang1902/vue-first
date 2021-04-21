@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <h2>{{message}}</h2>
+<!--  v-pre的指令作用为:原封不动的展示后面的信息，不渲染，内容是什么就是什么，不会发生改变-->
+  <h2 v-pre>{{message}}</h2>
+</div>
+
+
+
+
+
+<script src="../js/vue.js"></script>
+<script>
+  let vm=new Vue({
+    el: '#app',
+    data: {
+      message: '测试'
+    }
+  })
+</script>
+
+</body>
+</html>

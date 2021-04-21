@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <h1>当前技术:{{count}}</h1>
+    <button @click="add">+</button>
+    <button @click="sub">-</button>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+    let app=new Vue({
+        el: '#app',
+        data: {
+            count: 0
+        },
+        methods:{
+            add: function () {
+                alert("我增加"),
+                    this.count++
+            },
+            sub: function () {
+                alert("我减少"),
+                    this.count--
+
+            }
+        }
+
+    })
+</script>
+
+</body>
+</html>
